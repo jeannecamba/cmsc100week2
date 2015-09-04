@@ -8,11 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "cmsc100week2"
+    "url": "https://github.com/jeannecamba/cmsc100week2"
   },
   "author": "Jeanne Pauline Camba",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "express": "~4.13.3"
+    "express": "~4.13.3",
+    "body-parser": "~1.13.3",
+    "method-override": "~2.3.5",
+    "mysql": "~2.9.0"
   }
 }
