@@ -5,6 +5,7 @@ var db = require(__dirname + '/../lib/mysql'); //imports module to be used (mysq
 //access /students with the function GET
 //retrieves all student records
 exports.find = function(req, res, next){
+	console.log(req.ip + "find()");
 	db.query('SELECT * FROM student',
 		function(err, rows){
 			if(err) return next(err);
@@ -25,6 +26,7 @@ exports.insert = function(req, res, next){
 //access /students/:id with the function GET
 //retrieves one student record
 exports.findOne = function(req, res, next){
+	console.log(req.ip + "findOne()");
 	db.query('SELECT * FROM student WHERE studNo=?', [req.params.id],
 		function(err, rows){
 			if(err) return next(err);
